@@ -3,7 +3,7 @@ function esBisiesto(year) {
 }
 
 function celsiusAFahrenheit(celsius){
-    return (celsius * 9/5) + 32
+    return (celsius * 9/5) + 32;
 }
 
 function mayorDeDos(n1, n2){
@@ -18,4 +18,8 @@ function llamadaestaEnRango(numero, inicio, fin){
     return numero >= inicio && numero <= fin;
 }
 
-module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos, llamadaestaEnRango };
+function calcularPrecioFinal(precioinicial, descuento){
+    return precioinicial - (precioinicial/100 * descuento);
+}
+
+module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos, llamadaestaEnRango, calcularPrecioFinal };
