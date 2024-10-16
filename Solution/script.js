@@ -10,4 +10,8 @@ function mayorDeDos(n1, n2){
     return n1 > n2 ? n1 : n2;
 }
 
-module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos };
+function convertirMinutos(minutos){
+    return Math.round(minutos / 60) + " horas y " + minutos%60 +" minutos"
+}
+
+module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos };
