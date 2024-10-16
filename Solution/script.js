@@ -26,4 +26,8 @@ function puedeVotar(edad){
     return edad >= 18;
 }
 
-module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos, llamadaestaEnRango, calcularPrecioFinal, puedeVotar };
+function calcularAreaTriangulo(base, altura){
+    return (base * altura) / 2;
+}
+
+module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos, llamadaestaEnRango, calcularPrecioFinal, puedeVotar, calcularAreaTriangulo };
