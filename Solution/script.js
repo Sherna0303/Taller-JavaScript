@@ -1,5 +1,5 @@
-function esBisiesto(year) {
-    return year % 4 === 0 && year % 100 !== 0 || year % 400 === 0;
+function esBisiesto(edad) {
+    return edad % 4 === 0 && edad % 100 !== 0 || edad % 400 === 0;
 }
 
 function celsiusAFahrenheit(celsius){
@@ -22,4 +22,8 @@ function calcularPrecioFinal(precioinicial, descuento){
     return precioinicial - (precioinicial/100 * descuento);
 }
 
-module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos, llamadaestaEnRango, calcularPrecioFinal };
+function puedeVotar(edad){
+    return edad >= 18;
+}
+
+module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos, llamadaestaEnRango, calcularPrecioFinal, puedeVotar };
