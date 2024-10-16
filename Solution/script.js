@@ -14,4 +14,8 @@ function convertirMinutos(minutos){
     return Math.round(minutos / 60) + " horas y " + minutos%60 +" minutos"
 }
 
-module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos };
+function llamadaestaEnRango(numero, inicio, fin){
+    return numero >= inicio && numero <= fin;
+}
+
+module.exports = { esBisiesto, celsiusAFahrenheit, mayorDeDos, convertirMinutos, llamadaestaEnRango };
